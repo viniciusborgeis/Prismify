@@ -1,0 +1,1 @@
+export { PrismifyBoxWidget } from './prismifyBoxWidget';

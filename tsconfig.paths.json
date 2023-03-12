@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@src/*": ["./src/*"],
+        "@src": ["./src"],
+        "@modules/*": ["./src/modules/*"],
+        "@modules": ["./src/modules"],
+        "@decorators/*": ["./src/decorators/*"],
+        "@decorators": ["./src/decorators"],
+        "@types/*": ["./src/interfaces/*"],
+        "@types": ["./src/interfaces"],
+      }
+    }
+  }

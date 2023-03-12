@@ -1,0 +1,37 @@
+{
+  "name": "Prismify",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:viniciusborgeis/Prismify.git",
+  "author": "Vinicius Borges <viniciusborgeis@gmail.com>",
+  "license": "MIT",
+  "mjs": true,
+  "esm": {
+    "node": true,
+    "extensions": true,
+    "main": "src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
+    "start": "NODE_NO_WARNINGS=1 node --experimental-specifier-resolution=node --loader ts-node/esm -r tsconfig-paths/register ./src/index.ts",
+    "start:old": "node --experimental-specifier-resolution=node src/index.js",
+    "plots:old": "node --experimental-specifier-resolution=node src/eligiblePlots.js",
+    "lint": "eslint . --ext .ts,.js,.cjs"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81"
+  },
+  "devDependencies": {
+    "@types/blessed": "^0.1.21",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.3",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.9.5"
+  }
+}
